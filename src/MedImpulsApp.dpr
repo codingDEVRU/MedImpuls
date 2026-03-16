@@ -2,13 +2,13 @@ program MedImpulsApp;
 
 uses
   Vcl.Forms,
-  MedImpuls in 'MedImpuls.pas' {Form1};
+  MedImpuls in 'MedImpuls.pas' {MedImpulsForm};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TMedImpulsForm, MedImpulsForm);
   Application.Run;
 end.

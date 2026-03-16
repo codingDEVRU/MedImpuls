@@ -124,13 +124,16 @@
         <DCC_ExeOutput>.\MedImpuls\bin</DCC_ExeOutput>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
+        <Icon_MainIcon>MedImpulsApp_Icon.ico</Icon_MainIcon>
+        <UWP_DelphiLogo44>..\res\app\ico\AppIcon.png</UWP_DelphiLogo44>
+        <UWP_DelphiLogo150>..\res\app\ico\AppIcon.png</UWP_DelphiLogo150>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="MedImpuls.pas">
-            <Form>Form1</Form>
+            <Form>MedImpulsForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
@@ -159,6 +162,13 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="4">
+                <DeployFile LocalName="..\res\app\ico\AppIcon.png" Configuration="Release" Class="UWP_DelphiLogo44">
+                    <Platform Name="Win64">
+                        <RemoteDir>Assets\</RemoteDir>
+                        <RemoteName>Logo44x44.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="MedImpuls\bin\MedImpulsApp.exe" Configuration="Release" Class="ProjectOutput">
                     <Platform Name="Win64">
                         <RemoteName>MedImpulsApp.exe</RemoteName>

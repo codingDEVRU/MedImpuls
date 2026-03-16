@@ -1,7 +1,7 @@
-object Form1: TForm1
+object MedImpulsForm: TMedImpulsForm
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = #1052#1077#1076#1048#1084#1087#1091#1083#1100#1089
   ClientHeight = 658
   ClientWidth = 804
   Color = clBtnFace
