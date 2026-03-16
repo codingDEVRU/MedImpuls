@@ -136,6 +136,10 @@
             <Form>MedImpulsForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="Core\UApplication.pas"/>
+        <DCCReference Include="Core\USettings.pas"/>
+        <DCCReference Include="Core\UUtils.pas"/>
+        <DCCReference Include="Core\UCryptoUtils.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
